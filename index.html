@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative UI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="nav-left">
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <nav class="nav-links" id="navLinksLeft">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#" class="nav-item">About</a>
+        </nav>
+    </div>
+      <div class="nav-center">
+          <div class="logo"><img src="/assets/images/logo.svg"/></div>
+    </div>
+    <div class="nav-right">
+        <nav class="nav-links" id="navLinksRight">
+          <a href="#" class="nav-item">Services</a>
+          <a href="#" class="nav-item">Contact</a>
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <h2>Creative Starts Here</h2>
+        <p>Build beautiful UIs with smooth animations and clean code.</p>
+      </div>
+      <div id="lottie" class="lottie-box"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>This template uses no frameworks, no jQuery. Just vanilla HTML, CSS, JS — the modern way.</p>
+    </div>
+  </section>
+
+  <section id="features" class="section dark">
+    <div class="container">
+      <h2>Features</h2>
+      <ul>
+        <li>💨 Lightweight & fast</li>
+        <li>⚙️ Modular JS</li>
+        <li>📱 Mobile-first responsive</li>
+        <li>🎨 Lottie support</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="js/main.js" defer></script>
+  <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+</body>
+</html>
