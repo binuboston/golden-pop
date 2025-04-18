@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creative UI</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-lottie.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
@@ -29,9 +33,28 @@
     </div>
   </div>
 </header>
+<div class="falling-icons">
+  <img src="assets/images/pop1.png" class="popcorn-icon"  />
+  <img src="assets/images/pop2.png" class="popcorn-icon"  />
+  <img src="assets/images/pop3.png" class="popcorn-icon"  />
+  <img src="assets/images/pop4.png" class="popcorn-icon"  />
+  <img src="assets/images/pop5.png" class="popcorn-icon"  />
+  <img src="assets/images/pop6.png" class="popcorn-icon" " />
+</div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Explore Our Creative World</h1>
+    <p>Unique design. Smooth interaction. Crafted for you.</p>
+  </div>
 
+  <div class="hero-products">
+    <img src="assets/images/red-pop.png" alt="Product 1">
+    <img src="assets/images/vilot-pop.png" alt="Product 2">
+    <img src="assets/images/blue-pop.png" alt="Product 3">
+  </div>
+</section>
 
-  <section class="hero">
+  <!-- <section class="hero">
     <div class="container grid-2">
       <div>
         <h2>Creative Starts Here</h2>
@@ -39,7 +62,7 @@
       </div>
       <div id="lottie" class="lottie-box"></div>
     </div>
-  </section>
+  </section> -->
 
   <section id="about" class="section">
     <div class="container">
@@ -59,8 +82,66 @@
       </ul>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footertop"></div>
+    <div class="footer-logo">
+      <img src="/assets/images/footer-logo.svg"/>
+    </div>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Office</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>products</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <p>Stay up to date aboutus and our products</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Stock our Products</h4>
+        <p>Are you interested in stocking our delicious popcorn? We would love to hear from you</p>
+        
 
+        <div class="lottie-btn-wrapper">
+          <button class="connect-btn">Connect</button>
+          <div class="lottie-hover" id="btnLottie"></div>
+        </div>
+        
+
+      </div>
+    </div>
+    <div class="footer-btm">
+      <p class="footer-copy">© 2025 Elara. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+  
   <script src="js/main.js" defer></script>
-  <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+  
+  <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+
 </body>
 </html>
