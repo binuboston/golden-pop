@@ -5,7 +5,7 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'assets/animations/hero-lottie.json'
+  path: 'assets/animations/popcon-fly.json'
 });
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
