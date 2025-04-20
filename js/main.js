@@ -56,5 +56,24 @@ icons.forEach(icon => {
   icon.style.animationDelay = `${delay}s`;
 });
 
+// video play banner
+function openVideo() {
+  const modal = document.getElementById("videoModal");
+  const player = document.getElementById("youtubePlayer");
 
+  // Your video URL
+  const videoURL = "https://www.youtube.com/embed/To4f-ODZmIE?autoplay=1&rel=0";
+
+  player.src = videoURL;
+  modal.style.display = "flex";
+}
+
+function closeVideo() {
+  const modal = document.getElementById("videoModal");
+  const player = document.getElementById("youtubePlayer");
+
+  // Stop the video
+  player.src = "";
+  modal.style.display = "none";
+}
 

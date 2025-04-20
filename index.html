@@ -48,6 +48,41 @@
     <img src="assets/images/vilot-pop.png" alt="Product 2" class="product-img ">
     <img src="assets/images/blue-pop.png" alt="Product 3" class="product-img">
   </div>
+  <!-- Lightbox modal -->
+<!-- VIDEO WRAPPER -->
+<div class="video-wrapper">
+  <div class="video-thumbnail" onclick="openVideo()">
+    <!-- Decorative PNGs -->
+    <img src="assets/images/deco-left.png" class="deco deco-left" alt="Left Deco">
+    <img src="assets/images/goat-b.png" class="deco deco-right" alt="Right Deco">
+
+    <!-- Thumbnail Image -->
+    <img src="/assets/images/banner-vdo-thumb.png" class="video-poster" alt="Video Poster">
+
+    <!-- Play Button (inside thumbnail, so also clickable) -->
+    <div class="play-btn">▶</div>
+  </div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close" onclick="closeVideo()">&times;</span>
+    <iframe
+      id="youtubePlayer"
+      width="560"
+      height="315"
+      src=""
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
+
 </section>
 
 
