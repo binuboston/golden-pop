@@ -43,6 +43,7 @@
     background: var(--clr-bg);
     color: #222;
     line-height: 1.6;
+    background-image: url(/assets/images/body-bg.png);
   }
   
   /* Container */
