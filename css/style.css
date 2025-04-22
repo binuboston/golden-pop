@@ -179,14 +179,16 @@
   }
   /* hero */
   .hero {
-    height: 70vh;
+    height: 960px;
     align-items: center;
     text-align: center;
     padding: 40px 20px;
-    background-image: url('/assets/images/hero-main-bg.png');
+    background-image: url('/assets/images/hero-main-bg.png'),url('/assets/images/light-border.png');
     background-size: cover;
     color: #fff;
     position: relative;
+    background-position: center, bottom;
+
   }
   
   .hero-content h1 {
@@ -355,11 +357,11 @@
 .deco {
   position: absolute;
   top: -140px;
-  width: 150px;
+  width: auto;
 }
 
 .deco-left {
-  left: -60px;
+  left: 90px;
 }
 
 .deco-right {
