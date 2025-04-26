@@ -184,7 +184,7 @@
     align-items: center;
     text-align: center;
     padding: 40px 20px;
-    background-image: url('/assets/images/hero-main-bg.png'),url('/assets/images/light-border.png');
+    background-image: url('/assets/images/hero-main-bg.png');
     background-size: cover;
     color: #fff;
     position: relative;
