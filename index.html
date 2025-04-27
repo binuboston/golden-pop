@@ -37,57 +37,108 @@
 <section class="hero">
   <div class="hero-content">
     <h1>POPPING PERFECTION<br> SINCE 1996</h1>
-    <p>Unique design. Smooth interaction. Crafted for you.</p>
+    <p>MADE IN THE HEART OF NORTHERN IRELAND</p>
   </div>
   <div class="hom-pop-fly">
   
   <img src="/assets/images/pop-hom.png"/>
 </div>
+<img src="/assets/images/hill-bg.png" class="hill-bg" alt="Hill Background" />
+<div class="cloud cloud-1"></div>
+<div class="cloud cloud-2"></div>
+<div class="cloud cloud-3"></div>
+
+
   <div class="hero-products">
-    <img src="assets/images/red-pop.png" alt="Product 1" class="product-img">
-    <img src="assets/images/vilot-pop.png" alt="Product 2" class="product-img center-img">
-    <img src="assets/images/blue-pop.png" alt="Product 3" class="product-img">
+    <img src="assets/images/sweet-pop.png" alt="Product 1" class="product-img">
+    <img src="assets/images/salt-pop.png" alt="Product 2" class="product-img center-img">
+    <img src="assets/images/sweet-salt.png" alt="Product 3" class="product-img">
+  </div>
+  <div id="video-play" class="video-body">
+    
+    <!-- VIDEO WRAPPER -->
+  <div class="video-wrapper">
+    <div class="video-thumbnail" onclick="openVideo()">
+      <!-- Decorative PNGs -->
+       <img src="assets/images/welcm-goat.png" class="deco deco-right" alt="Right Deco">
+      <img src="assets/images/goat-a.png" class="deco deco-left" alt="Left Deco">
+      <!-- Thumbnail Image -->
+      <img src="/assets/images/banner-vdo-thumb.png" class="video-poster" alt="Video Poster">
+  
+      <!-- Play Button (inside thumbnail, so also clickable) -->
+      <div class="play-btn">
+        <div id="lottie" class="lottie-box"></div>
+      </div>
+    </div>
   </div>
   
-</section>
-<section id="video-play" class="video-body">
-  <!-- VIDEO WRAPPER -->
-<div class="video-wrapper">
-  <div class="video-thumbnail" onclick="openVideo()">
-    <!-- Decorative PNGs -->
-    <img src="assets/images/goat-a.png" class="deco deco-left" alt="Left Deco">
-    <img src="assets/images/goat-b.png" class="deco deco-right" alt="Right Deco">
-
-    <!-- Thumbnail Image -->
-    <img src="/assets/images/banner-vdo-thumb.png" class="video-poster" alt="Video Poster">
-
-    <!-- Play Button (inside thumbnail, so also clickable) -->
-    <div class="play-btn">▶</div>
-  </div>
-</div>
-
-<!-- VIDEO MODAL -->
-<div id="videoModal" class="video-modal">
-  <div class="video-modal-content">
-    <span class="close" onclick="closeVideo()">&times;</span>
-    <iframe
-      id="youtubePlayer"
-      width="560"
-      height="315"
-      src=""
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
+  <!-- VIDEO MODAL -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <span class="close" onclick="closeVideo()">&times;</span>
+      <iframe
+        id="youtubePlayer"
+        width="560"
+        height="315"
+        src=""
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 </div>
 </section>
+
 
 
   <section id="about" class="section">
     <div class="container">
-      <h2>About</h2>
-      <p>This template uses no frameworks, no jQuery. Just vanilla HTML, CSS, JS — the modern way.</p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img class="img-full" src="/assets/images/about-img.png" alt="">
+        </div>
+        <div class="grid-item"><h3>AT GOLDEN POPCORN, WE’VE BEEN CRAFTING DELICIOUS, CINEMA-STYLE POPCORN FOR OVER 20 YEARS.</h3>
+          <p>From supplying cinemas to filling shelves in major supermarkets, our passion for quality and taste has made us Northern Ireland’s leading popcorn manufacturer. Made with the finest ingredients and the highest standards, every bite delivers the perfect crunch.</p>
+        <div>
+          <button class="btn-prime">Learn more</button>
+          <button class="btn-outline">Stock</button>
+          <button class="btn-outline">Distribute</button>
+        </div>
+        </div>
+      </div> 
+      <div class="grid-3">
+        <div class="grid-item">
+          <div class="card sweet">
+            <div class="item-pop"><img src="/assets/images/sweet-pop.png" alt=""></div>
+            <div class="title-a">
+              <h3>Sweet</h3>
+              <p>A sweet love story</p>
+              <button class="btn-prime">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card salt">
+            <div class="item-pop"><img src="/assets/images/salt-pop.png" alt=""></div>
+            <div class="title-a">
+              <h3>Salty</h3>
+              <p>A Salty Sea Epic</p>
+              <button class="btn-prime">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card sweet-salt">
+            <div class="item-pop"><img src="/assets/images/sweet-salt.png" alt=""></div>
+            <div class="title-a">
+              <h3>Sweet & Salty</h3>
+              <p>A Dynamic Duo</p>
+              <button class="btn-prime">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>     
     </div>
   </section>
 
@@ -103,7 +154,7 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="footertop"><div id="lottie" class="lottie-box"></div></div>
+    <div class="footertop"></div>
     <div class="footer-logo">
       <img src="/assets/images/footer-logo.svg"/>
     </div>
