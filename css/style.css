@@ -23,20 +23,20 @@
   
   @font-face {
     font-family: 'FranklinGothic';
-    src: url('/assets/fonts/ITCFranklinGothicStd-Demi.woff') format('opentype');
+    src: url('../assets/fonts/ITCFranklinGothicStd-Demi.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'FranklinGothic-med';
-    src: url('/assets/fonts/ITCFranklinGothicStd-Med.woff') format('opentype');
+    src: url('../assets/fonts/ITCFranklinGothicStd-Med.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'LookingFlowers';
-    src: url('/assets/fonts/LookingFlowers-Caps.woff') format('opentype');
+    src: url('../assets/fonts/LookingFlowers-Caps.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -58,7 +58,7 @@
     background: var(--clr-bg);
     color: #222;
     line-height: 1.6;
-    background-image: url(/assets/images/body-bg.png);
+    background-image: url(../assets/images/body-bg.png);
     overflow-x: hidden;
   }
   /* Reset for sections */
@@ -163,7 +163,7 @@ p{
     bottom: -27px;
     width: 100%;
     height: 50px;
-    background: url(/assets/images/light-border.png);
+    background: url(../assets/images/light-border.png);
     background-size: contain;
     background-repeat: repeat-x;
 }
@@ -219,7 +219,7 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/menu-hover.svg'); /* replace with your image */
+    background-image: url('../assets/images/menu-hover.svg'); /* replace with your image */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ p{
     align-items: center;
     text-align: center;
     padding: 60px 20px;
-    background-image: url(/assets/images/hero-main-bg.png);
+    background-image: url(../assets/images/hero-main-bg.png);
     background-size: 1270px;
     color: #fff;
     position: relative;
@@ -548,13 +548,13 @@ p{
   transition: background-size 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .sweet .item-pop{
-  background-image: url(/assets/images/sweet-bg.png);
+  background-image: url(../assets/images/sweet-bg.png);
 }
 .salt .item-pop{
-  background-image: url(/assets/images/salt-bg.png);
+  background-image: url(../assets/images/salt-bg.png);
 }
 .sweet-salt .item-pop{
-  background-image: url(/assets/images/sweet-salt-bg.png);
+  background-image: url(../assets/images/sweet-salt-bg.png);
 }
 .sweet:hover{
   background-color: #F0DCFF;
@@ -765,7 +765,7 @@ p{
     background-size: contain;
     background-repeat: repeat;
     height: 50px;
-    background-image: url('/assets/images/footer-bg.png');
+    background-image: url('../assets/images/footer-bg.png');
     width: 100%;
   }
  
@@ -942,14 +942,14 @@ p{
   .cloud-1 {
     top: 100px;
     left: 10%;
-    background-image: url('/assets/images/hero-cloud-a.svg');
+    background-image: url('../assets/images/hero-cloud-a.svg');
     animation-name: cloudMove1;
   }
   
   /* Cloud 2 – float up and down */
   .cloud-2 {
     top: 200px;
-    background-image: url('/assets/images/hero-cloud-b.svg');
+    background-image: url('../assets/images/hero-cloud-b.svg');
     animation-name: cloudFloat;
     animation-duration: 8s;
     animation-timing-function: ease-in-out;
@@ -959,7 +959,7 @@ p{
   .cloud-3 {
     top: 40px;
     left: 75%;
-    background-image: url('/assets/images/hero-cloud-c.svg');
+    background-image: url('../assets/images/hero-cloud-c.svg');
     animation-name: cloudMove2;
   }
   
