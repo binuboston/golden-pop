@@ -81,6 +81,7 @@ h5{
     font-size: 16px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+    line-height: 22px;
 }
 p{
   font-size:16px;
@@ -579,7 +580,7 @@ p{
 .card:hover .item-pop {
   background-size: 120%;
 }
-.sweet .btn-prime{
+.sweet .btn-prime, .pop-red .btn-prime{
   background-color: #E6061A;
   color: #fff;
 }
@@ -888,10 +889,11 @@ p{
 }
 
 .btn-prime:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
+  background-color:#000;
+  color: #fff;
   transform: translateY(-2px);
 }
+
 
 /* Secondary Button */
 .btn-secondary {
@@ -914,6 +916,7 @@ p{
 }
 
 /* Outline Button */
+
 .btn-outline {
   padding: 8px 22px;
     font-size: 24px;
@@ -926,12 +929,16 @@ p{
     font-weight: 700;
     text-transform: uppercase;
 }
+.pop-red .btn-outline{
+  border-color:#E6061A ;
+  color: #E6061A;
 
+}
 .btn-outline:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
+  background-color: transparent;
+  color: #000;
   transform: translateY(-2px);
-  border-color: var(--clr-primary);
+  border-color: #000;
 }
 
   /* cloud animation start */
@@ -1080,6 +1087,9 @@ p{
   text-align: center;
   border-left: 2px solid #ccc; /* border between columns */
 }
+.pop-red .col{
+  border-left: 2px solid #e6081b;
+}
 
 /* Remove border from first column */
 .col:first-child {
@@ -1089,6 +1099,9 @@ p{
     font-size: 50px;
     text-transform: uppercase;
     line-height: 50px;
+}
+.incredients.pop-red h2{
+  color: #e6081b;
 }
 /* product section end */
 /* table-costom with esponsive */
