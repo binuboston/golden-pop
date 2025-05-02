@@ -77,11 +77,16 @@ function closeVideo() {
   modal.style.display = "none";
 }
 //header scroll
-window.addEventListener('scroll', function() {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 50) { // when scroll > 50px
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+let scrollTimeout;
+
+window.addEventListener('scroll', function () {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }, 50); // Adjust delay if needed
 });
