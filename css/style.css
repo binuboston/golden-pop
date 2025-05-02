@@ -584,6 +584,14 @@ p{
   background-color: #E6061A;
   color: #fff;
 }
+.pop-blue .btn-prime{
+  background-color: #7BB1E2;
+  color: #fff;
+}
+.pop-violet .btn-prime{
+  background-color: #7622BD;
+  color: #fff;
+}
 .salt .btn-prime{
   background-color: #7bb1e2;
   color: #fff;
@@ -934,6 +942,16 @@ p{
   color: #E6061A;
 
 }
+.pop-blue .btn-outline{
+  border-color:#7BB1E2 ;
+  color: #7BB1E2;
+
+}
+.pop-violet .btn-outline{
+  border-color:#7622BD ;
+  color: #7622BD;
+
+}
 .btn-outline:hover {
   background-color: transparent;
   color: #000;
@@ -1008,6 +1026,16 @@ p{
   background-color: #ffdeeb !important;
   z-index: 9;
 }
+.pop-blue::before{
+  background-image: url(../assets/images/b-bg-wawe.svg) !important;
+  background-color: #d7ebff !important;
+  z-index: 9;
+}
+.pop-violet::before{
+  background-image: url(../assets/images/violet-bg.svg) !important;
+  background-color: #f0dcff !important;
+  z-index: 9;
+}
 .product-detail, .infotable, .infotable::after{
   position: relative;
 }
@@ -1071,10 +1099,21 @@ p{
   margin-bottom: 0;
 }
 .inner-title h2{
-  font-size: 38px;
-  text-transform: uppercase;
+  font-size: 68px;
+  line-height: 38px;
+  margin: 0 auto;
+  color: #2c2c2b;
+  font-family: 'LookingFlowers';
+  font-weight: normal;
+  margin-bottom: 20px;
 }
-
+.inner-title p{
+  margin-bottom: 20px;
+}
+.inner-title{
+  display: block;
+  margin-bottom: 60px;
+}
 .col-5-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1090,7 +1129,12 @@ p{
 .pop-red .col{
   border-left: 2px solid #e6081b;
 }
-
+.pop-blue .col{
+  border-left: 2px solid #7BB1E2;
+}
+.pop-violet .col{
+  border-left: 2px solid #7622BD;
+}
 /* Remove border from first column */
 .col:first-child {
   border-left: none;
@@ -1102,6 +1146,12 @@ p{
 }
 .incredients.pop-red h2{
   color: #e6081b;
+}
+.incredients.pop-blue h2{
+  color: #7BB1E2;
+}
+.incredients.pop-violet h2{
+  color: #7622BD;
 }
 /* product section end */
 /* table-costom with esponsive */
@@ -1127,17 +1177,38 @@ p{
 .pop-red .elara-thead{
   background-color: #E6061A !important;
 }
+.pop-blue .elara-thead{
+  background-color: #7BB1E2 !important;
+}
+.pop-violet .elara-thead{
+  background-color: #7622BD !important;
+}
 .pop-red .elara-tbody .elara-tr:nth-child(odd) {
   background-color: #fff;
 }
 .pop-red .elara-tbody .elara-tr:nth-child(even) {
   background-color: #ffeef5;
 }
+.pop-blue .elara-tbody .elara-tr:nth-child(even) {
+  background-color: #d7ebff;
+}
+.pop-violet .elara-tbody .elara-tr:nth-child(even) {
+  background-color: #f0dcff;
+}
 .pop-red .elara-tbody .elara-tr:hover {
-  background-color: #FAF3D5;
+  background-color: #000;
   cursor: pointer;
 }
-
+.pop-blue .elara-tbody .elara-tr:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+.pop-violet .elara-tbody .elara-tr:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
 .elara-th, .elara-td {
   padding: 1rem;
   text-align: left;
@@ -1157,15 +1228,23 @@ p{
   cursor: pointer;
 }
 /* effect-styles */
-.left-ef{
+.pop-red .left-ef{
   position: absolute;
     top: 25%;
     left: -215px;
+}
+.pop-violet .left-ef img{
+  position: absolute;
+  width: 200px;
+  left: 0px !important;
 }
 .right-ef{
   position: absolute;
   top: 0%;
   right: -30px;
+}
+.right-ef img{
+  width: 200px;
 }
 .bt-right-ef{
   position: absolute;
@@ -1189,7 +1268,7 @@ p{
     left: 0;
 }
 .left-ef1 img{
-  width: 200px;
+  width: 140px;
 }
 section{
   position: relative;
@@ -1203,6 +1282,82 @@ section{
   width: 200px;
 }
 /* effect-styles */
+
+/* contact form */
+.elara-contact-form {
+  padding: 5rem;
+  max-width: 728px;
+  margin: auto;
+}
+.elara-contact-form .btn-prime{
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.title-form{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title-form h2{
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #000;
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #bd9846;
+  outline: none;
+}
+
+
+
+.elara-btn:hover {
+  background: #434190;
+}
+.select-opt {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+}
+.contact{
+  background-image: url(../assets/images/contact-bg.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* contact form */
 /* Mobile responsive */
 @media (max-width: 768px) {
   .elara-table,
