@@ -92,3 +92,65 @@ window.addEventListener('scroll', function () {
 });
 
 
+// carousal about
+
+const carousel = document.getElementById("carousel");
+
+  // Auto Slide
+  let scrollAmount = 0;
+  const itemWidth = () => carousel.querySelector(".carousel-item").offsetWidth + 16;
+
+  function autoSlide() {
+    if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth - 50) {
+      scrollAmount = 0;
+    } else {
+      scrollAmount += itemWidth();
+    }
+    carousel.scrollTo({ left: scrollAmount, behavior: "smooth" });
+  }
+
+  const autoSlideInterval = setInterval(autoSlide, 6000);
+
+  // Pause auto-slide when user interacts
+  let isDragging = false, startX, scrollLeft;
+
+  carousel.addEventListener("mousedown", e => {
+    isDragging = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    clearInterval(autoSlideInterval);
+  });
+
+  carousel.addEventListener("mouseleave", () => isDragging = false);
+  carousel.addEventListener("mouseup", () => {
+    isDragging = false;
+    setTimeout(() => setInterval(autoSlide, 3000), 3000);
+  });
+
+  carousel.addEventListener("mousemove", e => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  // Touch support
+  carousel.addEventListener("touchstart", e => {
+    isDragging = true;
+    startX = e.touches[0].pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    clearInterval(autoSlideInterval);
+  });
+
+  carousel.addEventListener("touchend", () => {
+    isDragging = false;
+    setTimeout(() => setInterval(autoSlide, 3000), 3000);
+  });
+
+  carousel.addEventListener("touchmove", e => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+  });
