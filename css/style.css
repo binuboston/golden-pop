@@ -1742,5 +1742,23 @@ section{
         order: 1; /* bring middle column to top */
       }
       /* product section end */
+      .hero-content h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .hero-content p {
+      font-size: 48px;
+      line-height: 30px;
+    }
+    .product-img {
+      width: 180px;
+    }
+    .hom-pop-fly, .hill-bg, .deco-right{
+      display: none;
+    }
+    .hero-products {
+      z-index: 3;
+      top: -25px;
+  }
     }
   
