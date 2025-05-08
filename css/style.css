@@ -1453,8 +1453,7 @@ section{
   color: #fff;
   background-color: #BD9746;
 }
-.img-container img {
-  width: 120px;
+.img-container img { 
   height: auto;
   position: absolute;
   transition: opacity 0.5s ease;
@@ -1470,6 +1469,16 @@ section{
 
 .img-container:hover img.hover-img {
   opacity: 1;
+}
+.name-block h6{
+  font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    line-height: 12px;
+}
+.name-block p{
+  color: #fff;
+  margin-top: 8px;
 }
 /* roll back 2 image about end */
 .title-b h3{
@@ -1760,5 +1769,5 @@ section{
       z-index: 3;
       top: -25px;
   }
-    }
+  }
   
