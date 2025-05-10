@@ -89,6 +89,9 @@ p{
   color:#2C2C2B;
   font-family: 'Poppins', sans-serif;
 }
+.nav-item.d-none{
+  display: none;
+}
 
   .section{
     display: flex;
@@ -778,6 +781,7 @@ p{
     margin-bottom: 1rem;
     font-size: 1.1rem;
     color: var(--clr-primary);
+    text-transform: capitalize;
   }
   
   .footer-col ul {
@@ -946,15 +950,16 @@ p{
   /* Primary Button */
 .btn-prime {
   padding: 8px 22px;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--clr-primary);
   background-color: var(--clr-text);
-  border: none;
+  border: 2px solid rgb(0 0 0 / 0%);
   border-radius: 16px;
   cursor: pointer;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .btn-prime:hover {
@@ -988,7 +993,7 @@ p{
 
 .btn-outline {
   padding: 8px 22px;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--clr-text);
     background-color: transparent;
     border: 2px solid var(--clr-text);
@@ -997,6 +1002,7 @@ p{
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 4px;
 }
 .pop-red .btn-outline{
   border-color:#E6061A ;
@@ -1212,9 +1218,9 @@ p{
   border-left: none;
 }
 .incredients h2{
-    font-size: 50px;
+    font-size: 42px;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 42px;
 }
 .incredients.pop-red h2{
   color: #e6081b;
@@ -1300,10 +1306,42 @@ p{
   cursor: pointer;
 }
 /* effect-styles */
+/* Floating animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Apply animation */
+.shape1 {
+  top: 10%;
+  left: 15%;
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.shape2 {
+  bottom: 10%;
+  right: 20%;
+  animation: floatLeftRight 8s ease-in-out infinite;
+}
 .pop-red .left-ef{
   position: absolute;
     top: 25%;
     left: -215px;
+    z-index: -1;
 }
 .pop-blue .left-ef{
   position: absolute;
@@ -1651,18 +1689,20 @@ section{
   }
 
   .elara-tr {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0.5rem;
-  }
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
 
   .elara-td {
     text-align: right;
     padding-left: 50%;
     position: relative;
     border: none;
+    padding-top: 5;
+    padding-bottom: 5;
   }
 
   .elara-td::before {
@@ -1687,6 +1727,7 @@ section{
       grid-template-columns: 1fr 1fr;
       text-align: center;
     }
+    
   }
   
   @media (max-width: 480px) {
@@ -1731,6 +1772,7 @@ section{
       }
       .grid-container, .grid-3 {
        display: block;
+       margin-top: 30px;
       }
       .grid-3 .grid-item {
         margin-bottom: 20px;
@@ -1769,5 +1811,142 @@ section{
       z-index: 3;
       top: -25px;
   }
+    .cloud{
+      display: none;
+    }
+    .hero {
+      height: 75vh;
+      background-size: 500px;
   }
-  
+  h3 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.btn-prime, .btn-outline{
+  font-size: 14px;
+}
+.tesco{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+.tesco img{
+  width: 100%;
+}
+.tesco .grid-item{
+  height: 70px;
+  margin-bottom: 0;
+}
+.tesco .grid-item .img-box{
+  padding: 10px;
+}
+.p-80 {
+  padding: 40px 0;
+}
+.social-share{
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  gap: 10px;
+}
+.social-share .img-box {
+  height: 100px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.footertop{
+  top: -10px;
+}
+.about .d-flex{
+  display: block;
+}
+.inner-title h1 {
+  font-size: 48px;
+  line-height: 48px;
+  }
+  .inner-title h2 {
+    font-size: 56px;
+    line-height: 28px;
+  }
+  .about p {
+    padding: .5rem;
+    text-align: center;
+}
+.jurny{
+  overflow: hidden;
+}
+.img-container {
+  width: 280px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.social-icons{
+  justify-content: center;
+}
+.bottom-inner {
+  display: block;
+  max-width: max-content;
+  margin: auto;
+  text-align: center;
+  width: auto;
+}
+.elara-contact-form {
+  padding: 2rem;
+}
+.title-form h2 {
+  font-size: 28px;
+  line-height: normal;
+}
+.contact-grid {
+  padding: 2rem;
+  display: block;
+}
+.contact-grid .d-flex div, .contact-grid .row {
+  width: 100%;
+}
+.contact-grid .d-flex{
+  display:block;
+  margin-bottom: 40px;
+}
+.contact-grid .social-icons{
+  justify-content: start;
+}
+.responsive-table td:first-child {
+  width: 100%;
+}
+.left-ef, .right-ef, .bt-right-ef, .left-ef1,.left-ef2, .right-ef1, .bt-right-ef1{
+  display:none;
+}
+.product-detail .product-img {
+  width: 264px;
+}
+.pop-blue .col{
+  border: none;
+}
+.other-products .inner-title{
+  margin-bottom: 30px;
+}
+.navbar::after, .abt-2nd-block::after {
+  bottom: -30px;
+}
+.scrolled.navbar::after {
+  bottom: -40px;
+}
+.nav-links.show {
+  display: block;
+  background: #d0c9af;
+  top: 90px;
+}
+.navbar .logo img {
+  width: 120px;
+  transition: width 0.4s ease;
+  margin-right: 28px;
+}
+.show .nav-item.d-none{
+  display: block;
+}
+}

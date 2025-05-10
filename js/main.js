@@ -8,11 +8,14 @@ lottie.loadAnimation({
   path: 'assets/animations/popcon-fly.json'
 });
 const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const navLinks = document.getElementById("navLinksLeft");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+}
+
 
 // Load Lottie Animation for button
 const lottieBtn = document.getElementById('btnLottie');
